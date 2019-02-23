@@ -135,7 +135,7 @@ int q_size(queue_t *q)
 {
     /* You need to write the code for this function */
     /* Remember: It should operate in O(1) time */
-    return q->size;
+    return (!q) ? 0 : q->size;
 }
 
 /*
